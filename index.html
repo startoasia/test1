@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xc86mZTkPAU?si=P2PSZbcIXfo7ULW6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!-- rio -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_bhWVjcbXEg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- jenny -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/oxJTRd79G1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <script>
+
+
+        function disemvowel(str) {
+            let arr = []
+            let answer = ''
+            arr = JSON.stringify(str).split("").filter(item => {
+                if (item !== "a" && item !== "A") {
+                    if (item !== "e" && item !== "E") {
+                        if (item !== "i" && item !== "I") {
+                            if (item !== "o" && item !== "O") {
+                                if (item !== "u" && item !== "U") {
+                                    return answer+=item
+                                }
+                            }
+                        }
+                    }
+                }
+            })
+            return JSON.parse(answer)
+        }
+        // disemvowel("This website is for losers LOL!")
+        disemvowel("No offense but,\nYour writing is among the worst I've ever read")
+    </script>￼
+</body>
+
+</html>
